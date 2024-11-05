@@ -7,8 +7,8 @@ async function bootstrap() {
 
   // The below code would prevent the app from crashing but it would also prevent
   // any saga from ever being triggered again after the first time it throws
-  process.on('uncaughtException', (err) => {
-    console.error('Application encountered an uncaught exception:', err);
-  });
+  // process.on('uncaughtException', (err) => {
+  //   console.error('Application encountered an uncaught exception:', err);
+  // });
 }
 bootstrap();
